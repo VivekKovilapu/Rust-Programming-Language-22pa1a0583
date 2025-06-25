@@ -1,4 +1,4 @@
-/*Mutable Browser*/
+/*Mutable Borrow*/
 fn main() {
     let mut x = 10;
     modify(&mut x);         
