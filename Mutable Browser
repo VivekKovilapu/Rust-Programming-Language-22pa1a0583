@@ -1,0 +1,9 @@
+/*Mutable Browser*/
+fn main() {
+    let mut x = 10;
+    modify(&mut x);         
+    println!("After modify: {}", x);
+}
+fn modify(val: &mut i32) {
+    *val += 5;
+}
