@@ -1,4 +1,4 @@
-/*Shared Browser*/
+/*Shared Borrow*/
 fn main() {
     let x = 42;
     print_value(&x);
