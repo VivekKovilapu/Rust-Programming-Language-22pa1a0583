@@ -1,0 +1,9 @@
+/*Shared Browser*/
+fn main() {
+    let x = 42;
+    print_value(&x);
+    println!("Original value is still: {}", x); 
+}
+fn print_value(val: &i32) {
+    println!("Shared borrow: {}", val);
+}
