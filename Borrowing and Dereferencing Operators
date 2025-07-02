@@ -1,0 +1,9 @@
+/*Write a program to implement Borrowing and Dereferencing Operators*/
+fn main() {
+    let x = 42;
+    let y = &x;          // Borrowing: y is a reference to x (& operator)
+    let z = *y;          // Dereferencing: get the value from reference (* operator)
+    println!("x = {}", x);
+    println!("y (reference to x) = {}", y);
+    println!("z (dereferenced y) = {}", z);
+}
