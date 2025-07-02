@@ -1,0 +1,7 @@
+/*Write a program to implement Type Casting Operator*/
+fn main() {
+    let x: i32 = 10;
+    let y: f64 = x as f64;
+    println!("x as i32: {}", x);
+    println!("x casted to f64: {}", y);
+}
