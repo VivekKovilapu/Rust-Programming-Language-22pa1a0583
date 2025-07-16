@@ -1,0 +1,28 @@
+/* sum of prime numbers 0 to n */
+use std::io;
+fn is_prime(num: u32) -> bool {
+    if num < 2 {
+        return false;
+    }
+    for i in 2..=((num as f64).sqrt() as u32) {
+        if num % i == 0 {
+            return false;
+        }
+    }
+    true
+}
+fn main() {
+    let mut input = String::new();
+    println!("Enter a number:");
+    io::stdin()
+        .read_line(&mut input)
+        .expect("Failed to read input");
+    let n: u32 = input.trim().parse().expect("Please enter a valid positive number");
+    let mut sum = 0;
+    for num in 2..=n {
+        if is_prime(num) {
+            sum += num;
+        }
+    }
+    println!("Sum of prime numbers up to {} is {}", n, sum);
+}
