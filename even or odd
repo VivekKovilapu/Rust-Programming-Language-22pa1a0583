@@ -1,0 +1,15 @@
+/*  2. Write a program to determine if a number is even or odd */
+use std::io;
+fn main() {
+    let mut input = String::new();
+    println!("Enter a number:");
+    io::stdin()
+        .read_line(&mut input)
+        .expect("");
+    let n: i32 = input.trim().parse().expect("Please enter a valid number");
+    if n % 2 == 0 {
+        println!("{} is Even", n);
+    } else {
+        println!("{} is Odd", n);
+    }
+}
